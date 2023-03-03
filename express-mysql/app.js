@@ -9,6 +9,6 @@ app.use(json());
 
 app.use("/categories", categoryRouter);
 
-app.listen(8000, () => {
-  console.log("http://localhost:8000");
+app.listen(5000, () => {
+  console.log("http://localhost:5000");
 });

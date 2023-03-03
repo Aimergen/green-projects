@@ -1,7 +1,7 @@
-GET http://localhost:8000/categories
+GET http://localhost:5000/categories
 
 ###
-POST http://localhost:8000/categories
+POST http://localhost:5000/categories
 content-type: application/json
 
 {
@@ -9,3 +9,19 @@ content-type: application/json
     "slug": "car",
     "imgUrl" : ""
 }
+
+###
+
+PUT  http://localhost:5000/categories/1
+Content-Type: application/json
+
+{
+    "name": "lolokavj",
+    "slug": "aijhgiau",
+    "imgUrl": "njni"
+}
+
+###
+
+DELETE http://localhost:5000/categories/2
+
