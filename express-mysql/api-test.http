@@ -11,6 +11,7 @@ content-type: application/json
 }
 
 ###
+<<<<<<< HEAD
 
 PUT  http://localhost:5000/categories/1
 Content-Type: application/json
@@ -25,3 +26,8 @@ Content-Type: application/json
 
 DELETE http://localhost:5000/categories/2
 
+=======
+GET http://localhost:8000/categories/3
+
+###
+>>>>>>> f24706f9986585712638ae0bc222a50bacf25d38

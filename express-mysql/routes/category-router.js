@@ -1,5 +1,13 @@
 import express from "express";
+<<<<<<< HEAD
 import { getCategories, createCategory, updateCategory, deleteCategory } from "../services/category-service.js";
+=======
+import {
+  getCategories,
+  createCategory,
+  getCategory,
+} from "../services/category-service.js";
+>>>>>>> f24706f9986585712638ae0bc222a50bacf25d38
 
 const router = express.Router();
 
@@ -10,6 +18,11 @@ router.get("/", async (req, res) => {
 router.get('/:id', async(req, res) =>{
   const { id} =req.params;
   res.json(await getCategories(id)); //neg shirheg category avah huselt
+});
+
+router.get("/:id", async (req, res) => {
+  const { id } = req.params;
+  res.json(await getCategory(id));
 });
 
 router.post("/", async (req, res) => {
